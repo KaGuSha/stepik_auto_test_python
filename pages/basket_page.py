@@ -3,11 +3,11 @@ from .locators import BasketPageLocators
 
 
 class BasketPage(BasePage):
-    
+
     def should_be_items_in_basket(self):
         assert self.is_element_present(*BasketPageLocators.ITEMS_IN_BASKET), \
             "Items is not presented in the basket"
-    
+
     def should_be_message_basket_empty(self):
         assert self.is_element_present(*BasketPageLocators.BASKET_EMPTY_MESSAGE), \
             "Message Basket is empty is not presented"
